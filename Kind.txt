@@ -1,0 +1,22 @@
+Kind
+============
+1 Install kind
+  https://kind.sigs.k8s.io/docs/user/quick-start/
+
+2 Install kubectl
+
+3 Create config file
+
+  vim myconfig.yml
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+
+To create from the above config file
+kind create cluster --name=necluster --config=myconfig.yml
+
