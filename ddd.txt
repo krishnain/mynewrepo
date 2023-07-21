@@ -1,3 +1,5 @@
+******
+&&&&&&
 UseCase
 Create a stack file to setup the selenium hub and nodes architecture
 but also specify a upper limit on the h/w
